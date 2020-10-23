@@ -1,22 +1,25 @@
 'use strict'
 function handleBoops() {
   let boopCount = 0;
+  
   $('.js-boop-counter').text(boopCount);
+  
   $('.js-booper').click(function(event) {
     boopCount += 1;
-  $('.js-boop-counter').text(boopCount);
+  
+    $('.js-boop-counter').text(boopCount);
   });
 }
-$(handleBoops());
+
 
 
 //this is for the nasa APOD
 function renderAPOD(response) {
-  console.log('render apod ran');
+  //console.log('render apod ran');
   if(response.media_type == "image") {
-  $('#js-apod').html(`<img src=${response.url}><br><p>Via NASA Astronomy Picture of the Day: ${response.explanation}</p>`)
+    $('#js-apod').html(`<img src=${response.url} alt="nasaAPOD"><br><p>Via NASA Astronomy Picture of the Day: ${response.explanation}</p>`)
   } else {
-  $('#js-apod').html(`<iframe width="420" height="315" src=${response.url}></iframe><br><p>Via NASA Astronomy Picture of the Day: ${response.explanation}</p>`)
+    $('#js-apod').html(`<iframe width="420" height="315" src=${response.url} name="nasaApodVideo"></iframe><br><p>Via NASA Astronomy Picture of the Day: ${response.explanation}</p>`)
   }
 }
 
@@ -33,12 +36,12 @@ function getAPOD() {
     .catch(err => {
        $('#apod').addClass('hidden');
         });
-    console.log(responseJson);
+    //console.log(responseJson);
 }
 
 //for the advice api
 function renderAdvice(response) {
-  console.log('render advice ran');
+  //console.log('render advice ran');
   $('#js-advice').html(`<p>"${response.slip.advice}"</p>`)
 }
 
@@ -60,8 +63,8 @@ function getAdvice() {
 
 //for the dog api
 function renderDogImage(response) {
-  console.log('render dog image ran');
-  $('#random-dog').html(`<img src=${response.message}>`)
+  //console.log('render dog image ran');
+  $('#random-dog').html(`<img src=${response.message} alt="randomDog">`)
 }
 
 function getDogImage() {
@@ -92,7 +95,7 @@ function displayResults(responseJson) {
 
 //for the bored.com api
 function getActivity(){
-  console.log('getActivity ran');
+  //console.log('getActivity ran');
   fetch('https://www.boredapi.com/api/activity?participants=1')
     .then(response => {
       if (response.ok) {
@@ -116,9 +119,10 @@ function watchForm() {
 }
 
 $(function () {
-    console.log('App loaded')
+    //console.log('App loaded')
     watchForm();
     getDogImage();
     getAdvice();
     getAPOD();
+    handleBoops();
 });

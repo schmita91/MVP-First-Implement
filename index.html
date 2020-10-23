@@ -6,50 +6,60 @@
     <title>WFH Therapy</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+  
   <body>
+    
     <header>
       <h1>WFH THERAPY</h1>
       <p>Your home for daily distractions and positivity.</p>
     </header>
+    
     <main>
     
-    <div class="group">
-    <!--This section provides some advice-->
-    <section id="advice" class="item">
-      <h2>Here's a free tip...</h2>
-      <p id="js-advice"></p>
-    </section>
-    </div>
-    <br>
-    <!--This section provides the NASA APOD-->
-     
-    <section id="apod" class="item">
-      <h2>First, realize how small you are...</h2>
-      <p id="js-apod"></p>
-    </section>
-    <br>
-    <!--This section provides a random dog image-->
-    <div class="group">
-    <section id="dogs" class="item">
-      <h2>Check out this random doggo:</h2>
-      <p id="random-dog"></p>
-      <button class="js-booper">Boop Me!</button>
-      <h3><span class="js-boop-counter">0</span> boops</h3>
-    </section>
-    <br>
-    <!-- This section provides a random activity-->
-    <section id="boredom" class="item">
-      <h2>BOREDOM FIXER</h2><h3>We can think of something for you to do so you don't have to</h3>
-      <form>
-      <button type="submit" id="js-submit">Bored? Click here.</button>
-      </form>
-      <ul id="js-results-list"></ul>
-      <p id="js-error-message"></p>
-    </section>
-    </div>
-  </main>
+      <div class="group">
+        <!--This section provides some advice-->
+        <section id="advice" class="item" name="freeAdvice">
+          <h2>Here's a free tip...</h2>
+          <p id="js-advice"></p>
+        </section>
+    
+      <br>
+    
+      <!--This section provides the NASA APOD-->
+      <section id="apod" class="item" name="astronomyPictureOfTheDay">
+        <h2>First, realize how small you are...</h2>
+        <p id="js-apod"></p>
+      </section>
+      
+      <br>
+
+      <!--This section provides a random dog image-->
+      <section id="dogs" class="item" name="randomDog">
+        <h2>Here's a dog to brighten your day...</h2>
+          <p id="random-dog"></p>
+          <button class="js-booper">Boop Me!</button>
+          <h3><span class="js-boop-counter">0</span> boops</h3>
+      </section>
+      
+      <br>
+
+      <!-- This section provides a random activity-->
+      <section id="boredom" class="item" name="activityIdea">
+        <h2>BOREDOM FIXER</h2>
+        <h3>We can think of something for you to do so you don't have to</h3>
+          <form>
+            <button type="submit" id="js-submit" name="boopButton">Bored? Click here.</button>
+          </form>
+            <ul id="js-results-list"></ul>
+            <p id="js-error-message"></p>
+      </section>
+  
+      </div>
+    </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
+
   </body>
+
 </html>
