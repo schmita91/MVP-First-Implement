@@ -1,6 +1,7 @@
 # WorkFromHome-Therapy
 Live App: https://schmita91.github.io/MVP-First-Implement/
 
+<img src="liveAppView.png">
 
 Summary
 This project uses RESTful APIs to fetch pleasant distractions from around the web, such as the NASA APOD,
