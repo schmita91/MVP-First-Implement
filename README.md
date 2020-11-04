@@ -1,5 +1,5 @@
 # WorkFromHome-Therapy
-Live App: https://schmita91.github.io/MVP-First-Implement/
+Live App: https://schmita91.github.io/workFromHomeTherapy/
 
 <img src="liveAppView.png">
 
