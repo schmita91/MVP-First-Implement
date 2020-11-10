@@ -1,13 +1,7 @@
 'use strict'
-function handleBoops() {
-  let boopCount = 0;
-  
-  $('.js-boop-counter').text(boopCount);
-  
-  $('.js-booper').click(function(event) {
-    boopCount += 1;
-  
-    $('.js-boop-counter').text(boopCount);
+function handleChangeDog() {
+  $('.js-change-dog').click(function(){
+      getDogImage();
   });
 }
 
@@ -124,5 +118,5 @@ $(function () {
     getDogImage();
     getAdvice();
     getAPOD();
-    handleBoops();
+    handleChangeDog();
 });

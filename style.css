@@ -1,6 +1,11 @@
+body {
+  background: url(https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png);
+}
+
 main {
-  margin: 0px 50px 0px 50px;
-  padding: 10px;
+  margin: 0px 20px 0px 20px;
+  padding: 5px;
+  width: auto;
 }
 
 .hidden{
@@ -10,7 +15,7 @@ main {
 header {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-  background-color: gray;
+  background-color: lightgray;
   padding: 10px;
   border-radius: 8px;
   margin: 0px 50px;
@@ -31,15 +36,19 @@ header p{
 #boredom, #dogs, #advice, #apod {
   text-align: center;
   width: auto;
-  margin: 0px 50px;
+  margin: 0px 10px;
   padding: 10px;
   border: solid;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 8px;
   border-width: 1px;
-  box-shadow: 2px 4px #888888;
+  box-shadow: 2px 4px #88888838;
   align-items: center;
   justify-content: center;
+}
+
+#boredom, #dogs, #advice, #apod, background{
+  background-color: rgba(175, 175, 175, 0.822);
 }
 
 #apod p{
@@ -68,17 +77,12 @@ li {
 
 .group {
   display: flex;
-  flex-direction: column;
-}
-
-.group-row {
-  display: flex;
   flex-direction: row;
 }
 
 .item {
   flex: 1;
-  margin: 5px;
+  margin: 2px;
 }
 
 .item-double {
@@ -142,7 +146,7 @@ button {
   margin: 0 8px 10px 0;
 }
 
-form button:hover {
+button:hover {
   font-size: 16px;
   background:#fff;
   color: green;
@@ -150,20 +154,16 @@ form button:hover {
 
 /*------ Groups and Items (Desktop) ----*/
 @media all and (min-width:400px) {
- .group {
-  display: flex;
-  flex-direction: column;
-}
-
 /*--- Changes header flex direction to row--*/
 .group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .item {
   flex: 1;
-  margin: 5px;
+  margin: 10px;
 }
 
 main {
