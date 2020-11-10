@@ -1,7 +1,7 @@
 # WorkFromHome-Therapy
 #Live App: https://schmita91.github.io/workFromHomeTherapy/
 
-<img src="liveAppView.png">
+<img src="liveAppView2.png">
 
 #Summary
 This project uses RESTful APIs to fetch pleasant distractions from around the web, such as the NASA APOD,
