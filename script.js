@@ -11,9 +11,9 @@ function handleChangeDog() {
 function renderAPOD(response) {
   //console.log('render apod ran');
   if(response.media_type == "image") {
-    $('#js-apod').html(`<img src=${response.url} alt="nasaAPOD" name="nasaAPOD"><br><p>Via NASA Astronomy Picture of the Day: ${response.explanation}`)
+    $('#js-apod').html(`<img src=${response.url} alt="nasaAPOD" name="nasa"><br><p>Via NASA Astronomy Picture of the Day: ${response.explanation}`)
   } else {
-    $('#js-apod').html(`<iframe width="420" height="315" src=${response.url} name="nasaApodVideo"></iframe><br><p>Via NASA Astronomy Picture of the Day: ${response.explanation}</p>`)
+    $('#js-apod').html(`<iframe width="420" height="315" src=${response.url} name="nasa Video"></iframe><br><p>Via NASA Astronomy Picture of the Day: ${response.explanation}`)
   }
 }
 
@@ -58,7 +58,7 @@ function getAdvice() {
 //for the dog api
 function renderDogImage(response) {
   //console.log('render dog image ran');
-  $('#random-dog').html(`<img src=${response.message} alt="randomDog" name="randomDog">`)
+  $('#random-dog').html(`<img src=${response.message} alt="randomDog" name="Dog">`)
 }
 
 function getDogImage() {
