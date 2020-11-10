@@ -36,7 +36,7 @@ function getAPOD() {
 //for the advice api
 function renderAdvice(response) {
   //console.log('render advice ran');
-  $('#js-advice').html(`<p>"${response.slip.advice}"`)
+  $('#js-advice').html(`"${response.slip.advice}"`)
 }
 
 function getAdvice() {
