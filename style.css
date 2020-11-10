@@ -4,7 +4,7 @@ body {
 
 main {
   margin: 0px 20px 0px 20px;
-  padding: 5px;
+  padding: 500px;
   width: auto;
 }
 
@@ -15,7 +15,7 @@ main {
 header {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-  background-color: lightgray;
+  background-color: rgba(199, 217, 250, 0.966);
   padding: 10px;
   border-radius: 8px;
   margin: 0px 50px;
@@ -25,12 +25,12 @@ header {
 }
 
 header h1 {
-  font-size: 4em;
+  font-size: 10vh;
   text-decoration-style: wavy;
 }
 
 header p{
-  font-size: 1.5em;
+  font-size: 4vh;
 }
 
 #boredom, #dogs, #advice, #apod {
@@ -43,12 +43,7 @@ header p{
   border-radius: 8px;
   border-width: 1px;
   box-shadow: 2px 4px #88888838;
-  align-items: center;
-  justify-content: center;
-}
-
-#boredom, #dogs, #advice, #apod, background{
-  background-color: rgba(175, 175, 175, 0.822);
+  background-color: rgba(164, 204, 236, 0.822);
 }
 
 #apod p{
@@ -83,6 +78,8 @@ li {
 .item {
   flex: 1;
   margin: 2px;
+  align-items: center;
+  justify-content: center;
 }
 
 .item-double {
@@ -167,7 +164,9 @@ button:hover {
 }
 
 main {
-  padding: 30px;
+  padding: 5vw;
 }
+
+
 
 }
