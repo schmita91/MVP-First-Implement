@@ -57,7 +57,6 @@ function getAdvice() {
 
 //for the dog api
 function renderDogImage(response) {
-  //console.log('render dog image ran');
   $('#random-dog').html(`<img src=${response.message} alt="randomDog">`)
 }
 
